@@ -94,6 +94,14 @@
     opacity: 0.8;
 }
 
+.logos a {
+    transition: transform 0.3s ease;
+}
+
+.logos a:hover {
+    transform: scale(1.1);
+}
+
 .linha-divisoria {
     height: 1px;
     width: 100%;
