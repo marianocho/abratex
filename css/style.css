@@ -1,0 +1,14 @@
+@import url('header.css');
+@import url('hero.css');
+@import url('sobre.css');
+@import url('associe.css');
+@import url('animacoes.css');
+@import url('tela-associar.css');
+
+/* Estilos globais aqui se necessário */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    padding-top: 100px;
+}

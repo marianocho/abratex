@@ -1,0 +1,89 @@
+.sobre-parte {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 30px;
+    flex-wrap: nowrap;
+}
+
+.sobre-parte .texto {
+    flex: 1;
+    min-width: 300px;
+    color: #1f2b3a;
+}
+
+.sobre-parte .texto h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2a3c5a;
+    margin-bottom: 20px;
+}
+
+.sobre-parte .texto p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #33455c;
+}
+
+.sobre-parte .texto strong {
+    font-weight: 600;
+}
+
+.sobre-parte .texto .destaque {
+    color: #2c61e2;
+}
+
+.sobre-parte .imagem {
+    flex: 1;
+    max-width: 420px;
+}
+
+.sobre-parte .imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.15);
+    background-color: #d3d3d3;
+}
+
+@media (max-width: 768px) {
+    .sobre-parte {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-parte .imagem {
+        max-width: 100%;
+    }
+
+    .sobre-parte .imagem img {
+        border-radius: 20px;
+    }
+}
+
+/* Parte B */
+
+/* imagem da Parte B (estilo invertido) */
+.parte-b .imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px 0 0 30px;
+    /* canto superior esq e inferior dir */
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.15);
+    background-color: #e5e5e5;
+}
+
+/* Destaque de texto */
+.texto .destaque {
+    color: #2c61e2;
+    font-weight: 600;
+}
+
+#oque-nos-move {
+    scroll-margin-top: 120px;
+    /* ajuste conforme a altura do header */
+}

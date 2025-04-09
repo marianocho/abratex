@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abratex</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-include="header.html"></div>
+
+    <div class="linha-divisoria"></div>
+
+    <!-- HERO -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>
+                    Conectando indústria e governo para um setor
+                    <span class="highlight">mais forte e competitivo.</span>
+                </h1>
+                <p>
+                    Atuamos na defesa dos interesses dos fornecedores e produtores de
+                    matéria-prima têxtil no Brasil
+                </p>
+                <a href="#sobre" class="hero-btn">Ver Mais →</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="img/hero-fabrica.jpeg" alt="Fábrica têxtil" />
+            </div>
+        </div>
+
+        <div class="hero-associados">
+            <h2>Nossos Associados</h2>
+            <p>Um pouco do nosso impacto no setor</p>
+            <div class="logos">
+                <img src="img/sueco.png" alt="Sueco" />
+                <img src="img/guabifios.png" alt="Guabifios" />
+                <img src="img/ktr.png" alt="KTR Group" />
+                <img src="img/avanti.png" alt="Avanti" />
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="sobre-section" id="sobre">
+        <!-- Bloco 1 -->
+        <div class="sobre-parte parte-a animar">
+            <div class="texto">
+                <h2>Quem Somos?</h2>
+                <p>
+                    Somos a Associação Brasileira de Matérias-Primas Têxteis
+                    (<strong>ABRATEX</strong>), uma entidade que desde 2015 representa e
+                    fortalece os fornecedores e produtores de matéria-prima têxtil no
+                    Brasil.
+                </p>
+                <p>
+                    Nosso propósito vai além da representatividade:
+                    <strong class="destaque">somos a voz da indústria, conectando empresas, governo e o mercado para
+                        garantir um setor mais competitivo e inovador.</strong>
+                </p>
+            </div>
+            <div class="imagem">
+                <img src="img/sobre1.jpeg" alt="Abratex evento" />
+            </div>
+        </div>
+
+        <!-- Bloco 2 -->
+        <div class="sobre-parte parte-b animar" id="oque-nos-move">
+            <div class="imagem">
+                <img src="img/sobre2.jpeg" alt="Reunião empresarial" />
+            </div>
+            <div class="texto">
+                <h2>O que nos Move?</h2>
+                <p>
+                    Somos uma entidade <strong>sem fins lucrativos</strong> comprometida em fortalecer o setor têxtil
+                    brasileiro. Atuamos ativamente na defesa e conciliação dos interesses de nossas associadas junto a
+                    entidades públicas e privadas, no Brasil e no exterior.
+                </p>
+                <p>
+                    Nossa missão é <strong class="destaque">representar e orientar a classe empresarial, promovendo um
+                        diálogo proativo entre indústria, governo e mercado.</strong> Buscamos impulsionar o
+                    desenvolvimento
+                    econômico do setor, criando oportunidades para o crescimento sustentável no comércio e na indústria
+                    têxtil.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ASSOCIE-SE -->
+    <section class="associe-section" id="associe-se">
+        <div class="associe-container">
+            <h2>
+                Faça parte da ABRATEX e junte-se a nós na missão de fortalecer a
+                indústria têxtil,
+                <span class="destaque">tecendo para um Brasil melhor</span>
+            </h2>
+            <a href="associar.html" class="btn-associe">Associe-se</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Abratex. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ANIMAÇÃO AO SCROLL -->
+    <script>
+        const elementosAnimados = document.querySelectorAll('.animar');
+
+        const animarAoScroll = () => {
+            elementosAnimados.forEach((el) => {
+                const rect = el.getBoundingClientRect();
+                const alturaTela = window.innerHeight;
+
+                if (rect.top < alturaTela - 100 && rect.bottom > 100) {
+                    el.classList.add('visivel');
+                } else {
+                    el.classList.remove('visivel');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', animarAoScroll);
+        window.addEventListener('load', animarAoScroll);
+    </script>
+    <script src="js/include.js"></script>
+
+</body>
+
+</html>
