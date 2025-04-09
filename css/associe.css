@@ -5,7 +5,10 @@
     text-align: center;
     border-top-left-radius: 80px;
     border-top-right-radius: 80px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
 }
+
 
 .associe-container {
     max-width: 800px;
@@ -13,6 +16,7 @@
 }
 
 .associe-section h2 {
+    font-family: 'Poppins', sans-serif;
     font-size: 28px;
     line-height: 1.4;
     margin-bottom: 40px;
@@ -20,6 +24,7 @@
 
 .associe-section .destaque {
     color: #7ec7ff;
+    font-family: 'Inter', sans-serif;
 }
 
 .btn-associe {

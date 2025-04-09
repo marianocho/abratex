@@ -19,16 +19,19 @@
 .hero-text {
     flex: 1;
     min-width: 300px;
+    font-family: 'Inter', sans-serif;
 }
 
 .hero-text h1 {
     font-size: 32px;
     line-height: 1.4;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
 
 .hero-text .highlight {
     color: #7ec7ff;
+    font-family: 'Inter', sans-serif;
 }
 
 .hero-text p {
@@ -36,6 +39,7 @@
     font-size: 16px;
     color: #d0d3d9;
     max-width: 500px;
+    font-family: 'Inter', sans-serif;
 }
 
 .hero-btn {
@@ -67,6 +71,7 @@
 }
 
 .hero-associados h2 {
+    font-family: 'Poppins', sans-serif;
     font-size: 24px;
     color: #b4d4f5;
 }
@@ -74,6 +79,7 @@
 .hero-associados p {
     color: #aab6c7;
     margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
 }
 
 .logos {
