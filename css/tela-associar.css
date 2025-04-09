@@ -6,11 +6,16 @@
     align-items: center;
     gap: 40px;
     flex-wrap: wrap;
+    padding-top: 50px;
+    flex: 1;
+    min-width: 300px;
 }
 
 .associar-texto {
     flex: 1;
     min-width: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
 .associar-texto h1 {
@@ -37,6 +42,35 @@
     max-width: 500px;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.animar {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.animar.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contato {
+    margin-top: 30px;
+}
+
+.contato h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #1f2b3a;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.contato p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 5px;
 }
 
 @media (max-width: 768px) {
