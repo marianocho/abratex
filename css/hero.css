@@ -84,14 +84,18 @@
 
 .logos {
     display: flex;
-    justify-content: center;
-    gap: 40px;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 60px;
+    /* espaçamento entre linhas e colunas */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
 .logos img {
-    height: 40px;
-    opacity: 0.8;
+    max-height: 65px;
+    height: auto;
 }
 
 .logos a {
