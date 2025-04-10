@@ -78,9 +78,8 @@
 }
 
 .instagram-link {
-    color: #e1306c;
-    /* cor rosa do Instagram */
-    font-size: 16px;
+    color: #757575;
+    font-size: 20px;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -90,6 +89,11 @@
 
 .instagram-link:hover {
     text-decoration: underline;
+}
+
+.contato i {
+    margin-right: 8px;
+    color: #2a3c5a;
 }
 
 @media (max-width: 768px) {
