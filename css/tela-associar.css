@@ -77,6 +77,21 @@
     font-family: 'Inter', sans-serif;
 }
 
+.instagram-link {
+    color: #e1306c;
+    /* cor rosa do Instagram */
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.instagram-link:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .associar-container {
         flex-direction: column;
